@@ -1,0 +1,113 @@
+/* styles.css */
+
+
+
+
+.formPopup {
+    /* border: 2px solid #dfdfdf; */
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 280px;
+    box-shadow: 2px -2px #458378;
+    margin-bottom: 200px;
+    background-image: linear-gradient(130deg, rgb(116, 155, 106), rgb(81, 137, 155));
+    position: absolute;
+    right: 10%;
+    top: 80px;
+    margin-right: 10px;
+}
+
+#formHeading,.tableHeading {
+    text-align: center;
+    margin-bottom: 14px;
+    color: #000000;
+}
+
+.formPopup label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.formPopup input {
+    width: 100%;
+    padding: 5px;
+    border-color: rgb(159, 168, 168);
+    border-radius: 3px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+#input_b {
+    width: 60%;
+    padding: 8px;
+    background-color: #277580;
+    color: white;
+    border-color: rgb(102, 156, 160);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 8vh;
+}
+
+
+.divMapContainer {
+    /* height: 100%; */
+    position: relative;
+    height: 700px;
+    width: 60vw;
+}
+
+.mapContainerMain {
+    /* height: 40%; */
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.mapContainerMain,
+.custom-div-class-v {
+    position: absolute;
+    bottom: 0px;
+    left: 0
+}
+.jsonButtton,.uploadButton{
+    position:absolute;
+    bottom: 140px;
+    right: 25vw;
+    padding: 4px;
+    background-color: #277580;
+    border-color: azure;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 35px;
+}
+.shapefileButtton,.jsonExpButton{
+    position:absolute;
+    bottom: 80px;
+    right: 22vw;
+    padding: 4px;
+    background-color: #4d774b;
+    border-color: azure;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 35px;
+}
+
+.container {
+    margin: auto;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .formPopup,
+    .divMapContainer {
+        width: 100%; /* Make each item take full width on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
