@@ -1,6 +1,6 @@
 import './App.css';
 
-import VectorDataUpload from '.components/VectorDataUpload';
+import VectorDataUpload from './components/VectorDataUpload';
 
 
 function App() {
